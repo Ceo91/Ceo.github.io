@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+#hero-1 {
+    background-image: url(../images/coffie.jpeg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h1 {
+        font-size: 120px;
+        padding-left: 100px;
+    }
+}
+#hero-2 {
+    background-image: url(../images/humpday.jpeg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 60px;
+    h2 {
+        font-size: 72px;
+        margin-bottom: 36px;
+    }
+    h4 {
+        font-size: 24px;
+        margin: 0px;
+    }
+    a {
+        font-size: 24px;
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        padding: 24px;
+        margin-top: 36px;
+    }
+}
+#hero-3 {
+    background-image: url(../images/funfriday.jpeg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 60px;
+    h2 {
+        font-size: 72px;
+        margin-bottom: 36px;
+    }
+    h4 {
+        font-size: 24px;
+        margin: 0px;
+    }
+    a {
+        font-size: 24px;
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        padding: 24px;
+        margin-top: 36px;
+    }
+}
