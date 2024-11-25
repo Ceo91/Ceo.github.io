@@ -11,7 +11,7 @@ body {
     margin: 0px auto;
 }
 #navbar {
-    background: linear-gradient(to bottom, green, #3e6d3e);
+    background: linear-gradient(to bottom, #35c435, #653b30);
     position: sticky;
     top: 0px;
     .contain {
@@ -24,4 +24,33 @@ body {
         color: whitesmoke;
         padding: 24px;
     }
+}
+#navbar2 {
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 166, 255),
+        rgb(0, 255, 136) 
+    );
+    position: sticky;
+    top: 0px;
+    .contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(73, 7, 187);
+        padding: 24px;
+    }
+}
+#navbar3 {
+    background: linear-gradient(to bottom, rgb(244, 148, 4), rgba(239, 46, 20, 0.793));
+    position: sticky;
+    top: 0px;
+    .contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
 }
