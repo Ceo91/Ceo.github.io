@@ -462,5 +462,24 @@ body {
     }
 }
 @media screen and (max-width: 800px) {
-    
+    #grid-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "banner banner banner"
+        "card-1 card-2 card-3"
+        "aside blog blog"
+        "footer footer footer"
+        "bottom bottom bottom";
+    }
+    #header h1 {
+        font-size: 36px;
+    }
+    #nav {
+        flex-wrap: wrap;
+    }
+    #nav a {
+        flex: 36px;
+    }
 }
