@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+nav {
+   background-color: black;
+   display: flex;
+   align-items: center;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 24px;
+    &:hover {
+        background-color: rgb(244, 173, 40);
+    }
+}
+nav > .logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-meun {
+    position: absolute;
+    box-shadow: -2px 2px 5px #555855;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s
+    ;
+    
+}
+.dropdown-meun a {
+    background-color: black;
+    color: wheat;
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown-container:hover .dropdown-meun {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+#hero-1 {
+    background-image: url(../images/hero1.jpg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    h1 {
+        margin-left: 20px;
+        font-size: 50px;
+        color: antiquewhite;
+        background-color: black;
+        padding: 9px 9px 9px 9px;
+    }
+}
+.card {
+    width: 300px;
+    border: 2px solid rgb(244, 173, 40);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: -4px 4px 12px #ceaaaa;
+    background: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card img {
+    width: px;
+    height: 150px;
+    object-fit: cover;
+}
+#centered-column {
+    width: 90vw;
+    margin: 48px auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        .logo {
+            margin: 0px;
+        }
+    }
+    .card {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0px;
+        width: 200px;
+    }
+    h1 {
+        margin-right: 20px;
+    }
+}
