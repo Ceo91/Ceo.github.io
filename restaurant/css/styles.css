@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+nav {
+   background-color: orange;
+   display: flex;
+   align-items: center;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: green;
+    padding: 24px;
+    &:hover {
+        background-color: rgb(169, 124, 80);
+    }
+}
+nav > .logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-meun {
+    position: absolute;
+    box-shadow: -2px 2px 5px #555855;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s
+    ;
+    
+}
+.dropdown-meun a {
+    background-color: black;
+    color: wheat;
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown-container:hover .dropdown-meun {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
