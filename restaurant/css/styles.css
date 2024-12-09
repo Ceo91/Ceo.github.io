@@ -84,10 +84,20 @@ h1 {
     h2 {
         font-size: 70px;
         padding-right: 200px;
-    }
-    
+    } 
 }
 .content-2 {
     display: flex;
     grid-template-columns: 1fr;
+}
+@media screen and (max-width: 768px) {
+    #nav a {
+        margin-left: 36px
+    }
+    .card a {
+        margin-right: 36px;
+    }
+    p {
+        margin-right: 36px;
+    }
 }
